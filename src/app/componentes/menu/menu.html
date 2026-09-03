@@ -1,4 +1,8 @@
-<p class="icon">&#9776;</p>
-<div class="menu-wrapper">
-    <div class="page-button"><h3>Home</h3></div>
+<p (click)="showMenu()" class="icon">&#9776;</p>
+<div *ngIf="isShown" class="menu-wrapper">
+    <div class="buttons-wrapper">
+        <div class="page-button"><p>Home</p></div>
+        <div class="page-button"><p>Dashboard</p></div>
+    </div>
 </div>
+<div class="background"></div>

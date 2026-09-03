@@ -9,11 +9,39 @@
 
 div.menu-wrapper {
     position: absolute;
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(104, 104, 104);
 
     margin: 0;
     top: 0;
     left: 0;
     
+    width: 300px;
     height: 100%;
+
+    z-index: 10;
+}
+
+div.buttons-wrapper {
+    margin-top: 15px;
+}
+
+div.page-button {
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(170, 170, 170);
+}
+
+div.page-button p {
+    margin-left: 15px;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    inset: 0;
+
+    z-index: 9;
+
+    background-color: rgba(139, 139, 139, 0.699);
 }

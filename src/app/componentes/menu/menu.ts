@@ -1,11 +1,16 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-menu',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './menu.html',
   styleUrl: './menu.css',
 })
 export class Menu {
+  isShown: boolean = false;
 
+  showMenu() {
+    this.isShown = !this.isShown;
+  }
 }

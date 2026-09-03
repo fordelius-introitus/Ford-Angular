@@ -31,18 +31,22 @@
 .login-form input[type="text"],
 .login-form input[type="password"] {
     border-radius: 5px;
-    border: 1px solid rgb(68, 68, 68);
+    border: 2px solid rgb(240, 240, 240);
     width: 70%;
-    height: 30px;
+    height: 35px;
     margin-bottom: 5px;
 }
 
-.login-form button {
-    width: 70%;
+.login-form #enviar {
+    width: 50%;
     height: 30px;
     background-color: rgb(165, 165, 165);
-    border: 1px solid rgb(99, 99, 99);
+    border: 0;
     border-radius: 5px;
+}
+
+.login-form #enviar:hover {
+    background-color: rgb(139, 139, 139);
 }
 
 .form-wrapper {

@@ -1,8 +1,10 @@
 <p (click)="showMenu()" class="icon">&#9776;</p>
 <div *ngIf="isShown" class="menu-wrapper">
+    <img id='ford-logo' src="/img/ford.png">
     <div class="buttons-wrapper">
-        <div class="page-button"><p>Home</p></div>
-        <div class="page-button"><p>Dashboard</p></div>
+        <hr>
+        <div class="page-button" routerLink='/home'><p>Home</p></div>
+        <div class="page-button" routerLink='/dashboard'><p>Dashboard</p></div>
     </div>
 </div>
-<div class="background"></div>
+<div *ngIf="isShown" class="background"></div>

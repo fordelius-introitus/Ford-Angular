@@ -9,6 +9,10 @@
     z-index: 12;
 }
 
+.icon:hover {
+    cursor: pointer;
+}
+
 
 
 div.menu-wrapper {
@@ -63,8 +67,8 @@ div.page-button p {
 
     z-index: 11;
 
-    background-color: rgba(139, 139, 139, 0.7);
-    animation: fadeIn 0.3s ease-out;
+    background-color: rgba(139, 139, 139, 0.5);
+    animation: fadeIn 0.1s ease-out;
 }
 
 @keyframes slideIn {
@@ -83,6 +87,6 @@ div.page-button p {
     }
 
     to {
-        opacity: 0.7;
+        opacity: 0.5;
     }
 }

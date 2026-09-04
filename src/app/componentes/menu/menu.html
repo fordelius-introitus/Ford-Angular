@@ -1,11 +1,19 @@
-<p (click)="showMenu()" class="icon">&#9776;</p>
-<div *ngIf="isShown" class="menu-wrapper">
+<p (click)="showMenu()" 
+[class.menu-open]="isShown" 
+class="icon">&#9776;</p>
+<div class="menu-wrapper" [class.menu-open]="isShown">
     <img id='ford-logo' src="/img/ford.png">
     <div class="buttons-wrapper">
         <hr>
-        <div class="page-button" routerLink='/home'><p>Home</p></div>
-        <div class="page-button" routerLink='/dashboard'><p>Dashboard</p></div>
-        <div (click)="logout()" id="login" class="page-button" routerLink='/login'><p>Logout</p></div>
+        <div class="page-button" routerLink='/home'>
+            <p>Home</p>
+        </div>
+        <div class="page-button" routerLink='/dashboard'>
+            <p>Dashboard</p>
+        </div>
+        <div (click)="logout()" id="login" class="page-button" routerLink='/login'>
+            <p>Logout</p>
+        </div>
     </div>
 </div>
-<div *ngIf="isShown" class="background"></div>
+<div class="background" [class.background-open]="isShown"></div>

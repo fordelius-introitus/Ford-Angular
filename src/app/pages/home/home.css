@@ -8,16 +8,11 @@ app-menu {
     top: 0;
 }
 
-.img-wrapper {
-
+img {
     display: flex;
     justify-content: center;
-    align-items: center;
 
-    margin-top: 10%;
-}
-
-img {
+    padding-top: 5%;
     max-width: 100%;
-    height: auto;
+    max-height: auto;
 }

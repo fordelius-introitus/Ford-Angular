@@ -9,23 +9,35 @@ h1 {
     color: rgb(0, 85, 197);
 }
 
+.dashboard {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .info-squares {
     display: flex;
     justify-content: space-between;
-    margin: 5% 5%;
+    margin: 2% 5%;
+    flex-shrink: 1;
 }
 
 .info-square {
     border: 1px solid rgb(194, 194, 194);
     background-color: rgb(248, 248, 248);
-    width: 250px;
-    height: 175px;
+
+    width: clamp(130px, 18vw, 250px);
+    height: clamp(100px, 13vw, 175px);
+
+    aspect-ratio: 250 / 175;
+    min-width: 0;
+
     text-align: start;
     box-shadow: 2px 2px 5px rgb(177, 177, 177);
 }
 
 .info-square h3 {
-    height: 40px;
+    height: 23%;
     margin: 0;
     display: flex;
     align-items: center;
@@ -34,10 +46,11 @@ h1 {
 
     border-bottom: 1px solid rgb(194, 194, 194);
     background-color: rgb(236, 236, 236);
+    font-size: clamp(12px, 1.3vw, 18px);
 }
 
 .info-square label {
-    font-size: 30px;
+    font-size: clamp(16px, 2.5vw, 30px);
     font-weight: bold;
     color: rgb(0, 110, 255);
 }
@@ -47,54 +60,26 @@ h1 {
     margin-left: 10px;
 }
 
-.info-squares input[type="select"] {
-    border: 1px solid black;
+.info-square select {
+    width: 80%;
+    max-width: 180px;
+    height: 35px;
+    box-sizing: border-box;
+    margin: 45px auto 0;
+    display: block;
 }
 
-.specs-table {
-    position: fixed;
-    justify-content: space-between;
-    bottom: 25px;
-    left: 0;
-    width:100%;
-    height: 80px;
-    border-spacing: 0;
-}
-
-.specs-table input[type=text] {
-    margin-left: 20px;
-    padding-left: 15px;
-    border: 1px solid black;
-    border-radius: 3px;
-
-    width: 185px;
-}
-
-.bottom-blue {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(28, 75, 161);
-    border-top: 1px solid black;
+.car-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     width: 100%;
-    height: 20px;
+    flex: 1;
 }
 
-.specs-table th {
-    border: 1px solid black;
-    border-left: 0;
-    background-color: rgb(28, 75, 161);
-    color: white;
-}
-
-.specs-table tr {
-    height: 30px;
-}
-
-select {
-    transform: scale(1.3);
-    padding: 5px 10px;
-    margin-left: 25%;
-    margin-top: 45px;
+.car-image img {
+    max-width: 30%;
+    max-height: 40vh;
+    object-fit: contain;
 }

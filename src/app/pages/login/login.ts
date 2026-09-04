@@ -26,7 +26,7 @@ export class Login {
         this.router.navigate(['/home']);
       },
       error: (err) => {
-        this.error_msg = err.error.message || "Usuário ou senha inválidos";
+        this.error_msg = "Usuário ou senha inválidos";
       }
     })
   }

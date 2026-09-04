@@ -2,11 +2,11 @@
     <img id="ranger" src="/img/ranger.png">
 </figure>
 <div class="form-wrapper">
-    <form class="login-form">
+    <form #loginForm = "ngForm" (ngSubmit)="login()" class="login-form">
         <img id="login-ford-logo" src="/img/ford.png">
         <h2>Boas-vindas</h2>
-        <input type="text" placeholder="E-mail">
-        <input type="password" placeholder="Senha">
+        <input [(ngModel)]="usuario.nome" type="text" name="nome" placeholder="Nome">
+        <input [(ngModel)]="usuario.senha" type="password" name="senha" placeholder="Senha">
         <div id="login-check">Login Automaticamente?<input type="checkbox"></div>
         <button id="enviar">Entrar</button>
     </form>

@@ -47,6 +47,8 @@
 }
 
 .login-form #enviar {
+    cursor: pointer;
+
     width: 50%;
     height: 30px;
     background-color: rgb(165, 165, 165);

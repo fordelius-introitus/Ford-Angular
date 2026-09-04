@@ -8,5 +8,5 @@ import { Menu } from "../../componentes/menu/menu";
   styleUrl: './dashboard.css',
 })
 export class Dashboard {
-
+  
 }
